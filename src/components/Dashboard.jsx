@@ -15,7 +15,7 @@ const Dashboard = () => {
         user
           ? (<Ventas />)
           : (<>
-            <p>No hay sesion activa</p>
+            <p className='text-center'>No hay sesion activa</p>
              </>)
       }
     </div>
