@@ -3,6 +3,7 @@ import Dashboard from './components/Dashboard'
 import Producto from './components/Producto'
 import Ventas from './components/Ventas'
 
+
 // pages
 import Login from './pages/Login'
 import Register from './pages/Register'
@@ -30,15 +31,15 @@ const Paths = () => {
     {
       path: '/product/:_id',
       element: <Producto />,
-     },
-     {
-       path: '/404',
-       element: <p className='text-center'>Page not found</p>
-     },
-     {
-       path: '*',
-       element: <Navigate to='/404' replace />
-       }
+     }
+    //  {
+    //    path: '/404',
+    //    element: <p className='text-center'>Page not found</p>
+    //  },
+    //  {
+    //    path: '*',
+    //    element: <Navigate to='/404' replace />
+    //    }
   ])
 
   return element

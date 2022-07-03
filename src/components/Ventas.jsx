@@ -21,10 +21,11 @@ const Ventas = () => {
   console.log(listProducts)
   return (
  <>
+ <div className='container'>
 <section className='row gy-4'>
       {listProducts.map((index, key) => (
         <div key={key} className='col-12 col-sm-6 col-md-6 col-lg-3'>
-          <Link to={`product/${index._id}`}>
+          <Link to={`/product/${index._id}`}>
             <article className='card'>
               <img loading='lazy' className='card-img-top' src={index.image ? index.image : ('https://tupaginaweb.cl/wp-content/uploads/2021/01/photo.png')} alt={index.product_name} />
               <div className='card-body'>
@@ -35,6 +36,7 @@ const Ventas = () => {
         </div>
       ))}
     </section>
+  </div>
    </>
   )
 }

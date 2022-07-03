@@ -10,6 +10,7 @@ const Dashboard = () => {
 
   const { user } = useSelector(state => state.auth)
   return (
+    <>
     <div className='container'>
       {
         user
@@ -19,6 +20,7 @@ const Dashboard = () => {
              </>)
       }
     </div>
+    </>
   )
 }
 

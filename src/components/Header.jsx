@@ -19,7 +19,8 @@ const Header = () => {
   return (
     <header className='header'>
       <div className='logo'>
-        <Link to='/'>Inicio</Link>
+      { user ? (<Link to='/user'>Inicio</Link>):(<Link to='/'>Inicio</Link>)}
+        
       </div>
       <ul>
         {user
