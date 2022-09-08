@@ -18,7 +18,7 @@ const Ventas = () => {
     }
     getProduct()
   }, [])
-  console.log(listProducts)
+  console.log("producto Encontrado",listProducts)
   return (
  <>
  <div className='container'>

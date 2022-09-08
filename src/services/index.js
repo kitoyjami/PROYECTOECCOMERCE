@@ -15,10 +15,11 @@ const getData = async () => {
   const res = req.data
   console.log("Estos productos devuelvo:", res)
   return res
-}
-const getProducto = async (_id = '') => {
-  const req = await axios.get(baseUrl + `/${_id}`)
+} 
+const getProducto = async (_id) => {
+  const req = await axios.get(baseUrl2 + `/${_id}`)
   const res = req.data
+  console.log("Estos productos devuelvo:", res)
   return res
 }
 
