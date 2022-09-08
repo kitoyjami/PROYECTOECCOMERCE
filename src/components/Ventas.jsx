@@ -29,7 +29,7 @@ const Ventas = () => {
             <article className='card'>
               <img loading='lazy' className='card-img-top' src={index.image ? index.image : ('https://tupaginaweb.cl/wp-content/uploads/2021/01/photo.png')} alt={index.product_name} />
               <div className='card-body'>
-                <p className='card-title'>{index.product_name}</p>
+                <p className='card-title'>{index.name}</p>
               </div>
             </article>
           </Link>

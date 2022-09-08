@@ -1,6 +1,8 @@
 import axios from 'axios'
 
+
 const baseUrl = 'https://ecomerce-master.herokuapp.com/api/v1/item'
+const baseUrl2 = 'https://crs-backend1.herokuapp.com/products'
 
 /* const getData = async (name = '') => {
   const setName = name ? `/name/${name}` : '/all'
@@ -9,7 +11,7 @@ const baseUrl = 'https://ecomerce-master.herokuapp.com/api/v1/item'
 } */
 const getData = async () => {
 
-  const req = await axios.get(baseUrl)
+  const req = await axios.get(baseUrl2)
   const res = req.data
   return res
 }
