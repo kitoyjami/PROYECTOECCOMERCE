@@ -11,8 +11,6 @@ function Register () {
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
-    birth_date: '',
-    gender: '',
     email: '',
     password: '',
     confirmPassword: ''
@@ -33,8 +31,6 @@ function Register () {
       const userData = {
         first_name,
         last_name,
-        birth_date,
-        gender,
         email,
         password
       }
@@ -45,7 +41,7 @@ function Register () {
     }
   }
 
-  const {  first_name,    last_name,    birth_date,    gender,    email,    password , confirmPassword } = formData
+  const {  first_name,    last_name,    email,    password , confirmPassword } = formData
 
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -94,30 +90,7 @@ function Register () {
               onChange={onChange} required
             />
           </div>
-          <div className='form-group'>
-            <input
-              type='date'
-              id='birth_date'
-              name='birth_date'
-              defaultValue='2018-07-22'
-              min='1970-01-01'
-              max='2004-12-31'
-              onChange={onChange}
-              required
-            />
-          </div>
-
-          <div className='form-group'>
-            <input
-              type='text'
-              id='gender'
-              name='gender'
-              className='form-control'
-              value={gender}
-              placeholder='Ingresa tu genero'
-              onChange={onChange} required
-            />
-          </div>
+          
           <div className='form-group'>
             <input
               type='email'

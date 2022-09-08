@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'https://ecomerce-master.herokuapp.com/api/v1/signup'
+const API_URL = 'https://crs-backend1.herokuapp.com/register'
 
 // Registrar usuario
 const register = async (userData) => {
@@ -14,7 +14,7 @@ const register = async (userData) => {
 
 // Login
 const login = async (userData) => {
-  const response = await axios.post('https://ecomerce-master.herokuapp.com/api/v1/login', userData)
+  const response = await axios.post('https://crs-backend1.herokuapp.com/login', userData)
   if (response.data) {
     localStorage.setItem('user', JSON.stringify(response.data))
   }
