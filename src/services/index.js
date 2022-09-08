@@ -13,6 +13,7 @@ const getData = async () => {
 
   const req = await axios.get(baseUrl2)
   const res = req.data
+  console.log("Estos productos devuelvo:", res)
   return res
 }
 const getProducto = async (_id = '') => {

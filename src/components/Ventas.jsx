@@ -23,7 +23,7 @@ const Ventas = () => {
  <>
  <div className='container'>
 <section className='row gy-4'>
-      {listProducts.map((index, key) => (
+      {listProductsdata.products.map((index, key) => (
         <div key={key} className='col-12 col-sm-6 col-md-6 col-lg-3'>
           <Link to={`/product/${index._id}`}>
             <article className='card'>
